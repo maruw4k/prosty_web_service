@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="js/droga.js"></script>
+   <link href="css/main.css" rel="stylesheet">
+   <title>Przejazdy</title>
+</head>
+
+<body>
+  
+   <div class="container">
+      <h1>Liczenie kosztów przejazdu</h1>
+      
+      <p id="wybierzPaliwo">Wybierz rodzaj paliwa:</p>
+      
+      <div>
+         <label>
+            <input type="radio" id="ON" name="optradio">ON</label>
+         <label>
+            <input type="radio" id="E95" name="optradio">E95</label>
+         <label>
+            <input type="radio" id="S98" name="optradio">S98</label>
+         <label>
+            <input type="radio" id="LPG" name="optradio">LPG</label>
+      </div>
+      
+         <div>
+            <label>Spalanie na 100km:</label>
+            <input type="number" name="spalanie" value="0" id="spalanie"> 
+         </div>
+         
+      <div class="form-group">
+         <label>Długość Trasy:</label>
+         <input type="number" class="form-control" name="km" value="0" id="km"> </div>
+         
+      <button type="button" onclick="oblicz()">Oblicz</button>
+      <textarea id="wynik" name="wynik" cols="20" rows="2" disabled></textarea>
+   </div>
+   
+</body>
+
+</html>
